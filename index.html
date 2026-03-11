@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="ShowMaker: Creating High-Fidelity 2D Human Video via Fine-Grained Diffusion Modeling.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShowMaker: Creating High-Fidelity 2D Human Video via Fine-Grained Diffusion Modeling</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">ShowMaker++: A Unified Framework for High-Fidelity 2D Human Video Generation and Protection via Fine-Grained Diffusion Modeling and Pose Priors</h1>
+          <!-- <h4 class="subtitle is-5"><em>NeurIPS 2024 </em> </h4> -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://mumuwei.github.io/">Quanwei Yang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="http://home.ustc.edu.cn/~yuly/">Lingyun Yu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://faculty.ustc.edu.cn/xiehongtao/zh_CN/index.htm">Hongtao Xie</a><sup>1*</sup>
+            </span>
+            
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Science and Technology of China</span>
+            
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+
+      <img src="./static/images/pipeline_ijcv.png"  width="800px" height="500px" 
+        type="application/pdf">
+      </img>
+      
+      <h2 class="subtitle has-text-centered">
+        The overview of our proposed framework ShowMaker++. 
+      </h2>
+
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <source src="./static/videos/steve.mp4" type="video/mp4">
+      </div>
+    </div>
+  </div>
+</section> 
+    
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Despite recent advances in human video generation, existing works typically target either facial animation or full-body motion, making them inadequate for realistic conversational videos that require various facial expressions and frequent hand gestures.
+Moreover, most current approaches treat content generation and protection as separate problems, leaving generated videos and models vulnerable to misuse and potentially leading to broader societal concerns.
+</p>
+To address these limitations, we propose ShowMaker++, a unified 2D human video generation and protection framework that jointly produces high-fidelity half-body conversational videos and embeds interpretable protection signals within the same diffusion process.
+We adopt a dual-stream diffusion architecture as the backbone and further introduce two specialized modules for crucial local regions (i.e., hands and face), along with a seamlessly pluggable watermark injection module.
+Specifically, to handle the challenging hand generation caused by sparse motion guidance, we propose a Key Point-based Fine-grained Hand Modeling module by amplifying positional information from raw hand key points and constructing a corresponding key point-based codebook. 
+To further enhance facial fidelity, we introduce a Face Recapture module, which extracts facial texture features and global identity features from the aligned face and integrates them into the diffusion process for face enhancement. 
+Crucially, we embed a pose-prior–guided interpretable watermark directly into the diffusion process, enabling the model to jointly achieve high-quality video generation and built-in protection for both the generated content and the model itself.
+</p>
+Extensive quantitative and qualitative experiments demonstrate the superior visual quality, temporal consistency, and interpretable watermark verification capability of our method.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <!-- <div class="publication-video"> -->
+          <!-- <video poster="" id="paper-video" autoplay controls muted loop playsinline height="100%"> -->
+          <!-- <video width="800" height="600" controls>
+            <source src="https://www.youtube.com/watch?v=jWvAglDGWxA&t=1s" type="video/mp4">
+          </video> -->
+          <iframe width="800" height="480"
+           src="https://www.youtube.com/embed/Jm2fitUZ2To?si=njjR9wiC7g6Vsq4m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+          <!-- </video> -->
+        <!-- </div> -->
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<!-- <video width="320" height="240" controls>
+  <source src="videos/movie.mp4" type="video/new_sup_final_crf20.mp4">
+  Your browser does not support the video tag.
+</video> -->
+
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+  
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            <!-- This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
